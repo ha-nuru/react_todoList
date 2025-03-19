@@ -19,7 +19,7 @@ const mockData = [
 	},
 	{
 		id : 2,
-		content : '숨쉬기',
+		content : 'React 공부하기',
 		date : new Date().getTime(),
 		isDone : false,
 	}
@@ -43,7 +43,7 @@ function App() {
         <div className="App">
             <Header />
             <Editor onCreate={onCreate}/>
-            <List todos={todos}/>
+            <List todos={todos} setTodos={setTodos}/>
         </div>
     );
 }
